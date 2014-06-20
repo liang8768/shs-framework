@@ -20,5 +20,5 @@
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />  
     </bean>  
 	
-	<mvc:resources mapping="/WEB-INF/resources/**" location="/WEB-INF/resources/"/>
+	<mvc:resources mapping="/resources/**" location="/resources/"/>
 </beans>
