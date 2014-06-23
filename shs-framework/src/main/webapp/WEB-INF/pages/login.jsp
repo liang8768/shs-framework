@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="zh-cn">
+<head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
@@ -33,15 +34,31 @@
     <h1 style="margin-left:320px;">SHS FRAMEWORK Login</h1>
   </div>
   <form action="">
-  <div class="form-group">
-    <label for="usernameInput">用户名：</label>
-    <input type="text" class="form-control" id="usernameInput" placeholder="请输入用户名">
+  <div class="form-group row">
+    <div class="col-sm-3">
+    </div>
+    <label class="col-sm-2 control-label" for="usernameInput">
+    	<h4>用户名：</h4>
+    </label>
+    <div class="col-sm-7">
+    	<input style="width: 200px" type="text" class="form-control" id="usernameInput" placeholder="请输入用户名">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-3">
+    </div>
+    <label class="col-sm-2 control-label" for="passwordInput">
+    	<h4>密码：</h4>
+    </label>
+    <div class="col-sm-7">
+    	<input style="width: 200px" type="password" class="form-control" id="passwordInput" placeholder="请输入密码">
+    </div>
   </div>
   <div class="form-group">
-    <label for="passwordInput">密码：</label>
-    <input type="password" class="form-control" id="passwordInput" placeholder="请输入密码">
+    <div class="col-sm-offset-4 col-sm-6">
+      <button onclick="login();" type="button" class="btn btn-primary">登录</button>
+    </div>
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
 </form>
 </div>
 <footer class="footer">
@@ -49,6 +66,10 @@
         <p class="pull-right">&copy; SHS FRAMEWORK 2014-2xxx.</p>
     </div>
 </footer>
-
 </body>
+<script type="text/javascript">
+  function login(){
+	  window.location.href="${ctx}/main"
+  }	
+</script>
 </html>

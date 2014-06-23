@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.framework.shs.core.utils.ReflectionUtils;
+
 /**
  * 数据访问基类
  * 
@@ -33,6 +35,9 @@ public class BaseDAO<T> {
 	 */
 	protected Class<T> entityClass;
 	
+	public BaseDAO(){
+		this.entityClass = ReflectionUtils.getSuperClassGenricType(getClass());
+	}
 	/**
 	 * 取得SessionFactory
 	 * 
