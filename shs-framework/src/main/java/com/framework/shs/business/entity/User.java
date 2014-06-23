@@ -4,6 +4,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import com.framework.shs.core.entity.IdEntity;
+
 /**
  * 用户实体类
  * 
@@ -13,7 +15,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="BASE_USERS")
-public class User {
+public class User extends IdEntity{
 	/**
 	 * 用户登录帐号 
 	 */

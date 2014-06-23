@@ -21,7 +21,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">系统管理 <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">基本信息</a></li>
-          <li><a href="#">用户管理</a></li>
+          <li><a href="${ctx }/user/index">用户管理</a></li>
           <li><a href="#">系统设置</a></li>
           <li class="divider"></li>
           <li><a href="#">XXXXXX</a></li>

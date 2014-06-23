@@ -55,7 +55,12 @@
 				<prop key="hibernate.hbm2ddl.auto" >${hibernate.hbm2ddl.auto}</prop>
 			</props>
 		</property>
-		<property name="packagesToScan" value="com.boya.ssh.entity" />
+		<property name="packagesToScan">
+            <list>
+                <value>com.framework.shs.core.entity</value>
+                <value>com.framework.shs.business.entity</value>
+            </list>
+		</property>
 	</bean>
 	
     <!-- 事务管理器配置, 使用jdbc事务-->
